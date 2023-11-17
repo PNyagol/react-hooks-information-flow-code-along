@@ -7,13 +7,7 @@ function Child({ onChangeColor, color }) {
     onChangeColor(newColor);
   }
 
-  return (
-    <div
-      onClick={handleClick}
-      className="child"
-      style={{ backgroundColor: color }}
-    />
-  );
+  return <div onClick={handleClick} className="child" style={{ backgroundColor: color }} />;
 }
 
 export default Child;
